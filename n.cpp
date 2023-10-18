@@ -88,20 +88,20 @@ public:
 
 int main() {
     FileSystem fileSystem;
-    //fileSystem.createFile("example.txt", "Initial content of the file.");
+    fileSystem.createFile("example.txt", "Initial content of the file.");
 
     //Copying and moving file example
-    // fileSystem.copyFile("example.txt", "C:/Users/Dell/OneDrive/Desktop/acc/.vscode/oopS/example.txt");
+    fileSystem.copyFile("example.txt", "C:/Users/Dell/OneDrive/Desktop/acc/.vscode/oopS/example.txt");
 
-    // fileSystem.moveFile("example.txt", "C:/Users/Dell/OneDrive/Desktop/acc/.vscode/patterns/example.txt");
+    fileSystem.moveFile("example.txt", "C:/Users/Dell/OneDrive/Desktop/acc/.vscode/patterns/example.txt");
 
-    // // Adding new version example
-    // fileSystem.addFileVersion("C:/Users/Dell/OneDrive/Desktop/acc/.vscode/patterns/example.txt", "New content added.");
+    // Adding new version example
+    fileSystem.addFileVersion("C:/Users/Dell/OneDrive/Desktop/acc/.vscode/patterns/example.txt", "New content added.");
 
-    // // Reverting to an older version example
+    // Reverting to an older version example
     
 
-    // fileSystem.revertToFileVersion("C:/Users/Dell/OneDrive/Desktop/acc/.vscode/DP/files/example.txt", 1);
+    //fileSystem.revertToFileVersion("C:/Users/Dell/OneDrive/Desktop/acc/.vscode/DP/files/example.txt", 1);
     fileSystem.deleteFile("example.txt");
 
     return 0;
